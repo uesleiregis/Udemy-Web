@@ -1,0 +1,194 @@
+*{
+	font-size: 16px;
+}
+
+/*
+#caixa{
+	width: 300px;
+	height: 300px;
+	background: #b9c941;
+	
+	margin: 15px;
+	padding: 10px 30px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+
+	-moz-border-radius: 10px 90px;
+	-webkit-border-radius: 10px 90px; 
+	border-radius: 10px 90px;
+}
+
+#caixa2{
+	width: 300px;
+	height: 300px;
+	background: #b9c941;
+	padding: 10px;
+	margin: 10px;
+	padding: 50px;
+	-moz-border-radius: 10px 90px;
+	-webkit-border-radius: 10px 90px; 
+	border-radius: 10px 90px;
+}
+
+#caixa3{
+	width: 300px;
+	height: 300px;
+	padding: 50px;
+	color: white;
+	background: url(../imagens/perfil.jpg);
+	background-position: -195px;
+	box-sizing: border-box;
+
+	-moz-border-radius: 150px;
+	-webkit-border-radius: 150px;
+	border-radius: 150px;
+
+	text-align: center;
+	padding-top:27px;
+}
+
+
+
+
+ ********** DEGRADE e TRANSPARÊNCIA ***************
+
+https://www.w3schools.com/css/css3_colors.asp
+https://www.w3schools.com/css/css3_gradients.asp
+
+background: rgb(255,255,255,0.5);
+background: rgba(255,255,255,0.5);
+background: rgb(255,255,255);
+background: linear-gradient(#ccc, green);
+background: linear-gradient(to right,white, green);
+background: linear-gradient(to bottom,#ccc, green);
+background: linear-gradient(80deg,yellow, green);
+background: linear-gradient(95deg,black, white,#ccc, white,#ccc,white);
+
+
+#caixa{
+	width: 300px;
+	height: 300px;
+	background: #b9c941 url("../imagens/camera.png")
+	background: radial-gradient( white,#ccc, blue,#ccc,white);
+}
+#caixa h1{
+	background: rgba(255,255,255,0.5)
+}
+
+
+SOMBRAS
+
+text-shadow: 20px 20px black;
+horizontal | vertical | cor
+text-shadow: 10px 7px rgba(255,100,100,0.5);
+text-shadow: 10px 7px rgba(255,100,100,0.5);
+text-shadow: 6px 4px 5px black;
+horizontal | vertical | desfoque | cor
+
+box-shadow: 20px 20px 2px black;
+box-shadow: -20px 20px 2px black;
+
+box-shadow: 50px -50px 2px 50px black;
+horizontal | vertical | desfoque | espalhamento/spread | cor
+
+https://www.w3schools.com/cssref/css3_pr_box-shadow.asp
+https://www.w3schools.com/cssref/css3_pr_text-shadow.asp
+
+
+#caixa{
+	width: 300px;
+	height: 300px;
+	background: #009670;
+	
+	box-shadow: 50px -50px 2px 50px black;
+
+	padding: 5px;
+	margin: 100px;
+	color: white;
+	padding: 20px;
+	border-radius: 100px 50px;
+	text-align: justify;
+	text-indent: 25px;
+}
+
+#caixa h1{
+	color: white;
+	font-weight: bold;
+	text-shadow: 10px -7px 2px black;
+}
+
+
+
+ANIMAÇÕES
+1. Dou um nome para a animação
+Crio a animação separada e uso ela direto dentro do nosso
+ identificador da caixa como uma propriedade css.
+
+
+@keyframes animacao-caixa{
+	from{
+		background: red;
+		border-radius: 0px 0px;
+		margin: 0px ;
+		
+	}
+	to{ 
+		background: blue;
+		
+		border-radius: 300px;
+
+		
+	}
+}
+
+#caixa{
+	
+	margin: 70% 50%;
+	width: 300px;
+	height: 300px;
+	background: red;
+
+
+	animation-name: animacao-caixa;
+	animation-duration: 3s;
+	animation-delay: 1s;
+	animation-iteration-count: 5;
+	animation-direction: alternate; 
+
+-o-animation: animacao-caixa 2s 0s 10 alternate;
+-moz-animation: animacao-caixa 2s 0s 10 alternate;
+-webkit-animation: animacao-caixa 2s 0s 10 alternate;
+animation: animacao-caixa 2s 0s 10 alternate;
+
+
+}
+
+
+
+*********************Transições ************************
+prefixos: -webkit-, -moz- , -o-;
+transition: width 3s, background 3s;
+
+
+
+#caixa{
+	width: 300px;
+	height: 150px;
+	background: white;
+
+	box-sizing: border-box;
+}
+
+#caixa:hover{
+	width: 700px;
+	background: rgb(100, 100,200,0.6);
+	
+	transition: all 0.7s;
+
+}
+p{
+	padding: 15px;
+}
+
+*/

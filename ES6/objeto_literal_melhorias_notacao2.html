@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+<script type="text/babel">
+//AULA 257 - OBJETO LITERAL MELHORIAS
+
+
+// Se quiser fazer para treinar:
+// Criar um formulário e recuperar o valor de cada objeto com o comando:
+// document.getElementById('nome').value
+
+// Declaracao PADRÃO ------------------------
+
+let nome = 'Jorge' 
+let idade = 29
+let sexo = 'Masculino'
+let profissao = 'Programador'
+
+
+
+let objeto = {
+	nome: nome,
+	idade: idade,
+	sexo: sexo,
+	profissao: profissao,
+	exibirResumo: function(){
+		console.log(`${this.nome},  ${this.idade} anos, de sexo ${this.sexo}, é ${this.profissao}`)
+	}
+}
+
+console.log(objeto)
+objeto.exibirResumo()
+
+
+//-------------------------------------------
+
+let nome = 'Jorge' //document.getElementById('x').value
+let idade = 29
+let sexo = 'Masculino'
+let profissao = 'Programador'
+
+
+
+let objeto = {
+	nome, //nome = nome variável / valor = valor da variável
+	idade,
+	sexo,
+	profissao,
+	exibirResumo(){
+		console.log(`${this.nome},  ${this.idade} anos, de sexo ${this.sexo}, é ${this.profissao}`)
+	}
+}
+
+console.log(objeto)
+objeto.exibirResumo()
+
+
+
+
+
+
+//------------------------------------- Observações pessoais
+// Usando callback como a função do método.
+
+
+// let nome = 'Jorge' 
+// let idade = 29
+// let sexo = 'Masculino'
+// let profissao = 'Programador'
+
+// let x = function(){
+// 		console.log(`${this.nome},  ${this.idade} anos, de sexo ${this.sexo}, é ${this.profissao}`)
+// 	}
+
+
+
+// let objeto = {
+// 	nome: nome,
+// 	idade: idade,
+// 	sexo: sexo,
+// 	profissao: profissao,
+// 	exibirResumo: x
+// }
+
+// console.log(objeto)
+// objeto.exibirResumo()
+
+
+//-----------------------------------------------------------
+
+
+</script>
+
+<body>
+
+<form action="/pagina-processa-dados-do-form" method="post">
+    <div>
+        <label for="name">Nome:</label>
+        <input type="text" id="name" />
+    </div>
+    <div>
+        <label for="mail">E-mail:</label>
+        <input type="email" id="mail" />
+    </div>
+    <div>
+        <label for="msg">Mensagem:</label>
+        <textarea id="msg"></textarea>
+    </div>
+    <div class="button">
+        <button type="submit">Enviar sua mensagem</button>
+    </div>
+</form>
+
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>

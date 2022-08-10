@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Atividade para Fixação do Conteúdo</title>
+
+	
+
+	<script>
+
+		// !(4==2) || &&
+
+		// if(2==2 || 3>=1 || 'a' == 'b'){
+		// 	document.write('Verdadeiro')
+		// }else{
+		// 	document.write('Falso')
+		// }
+
+		
+
+		// var nota= prompt('Digite a nota do aluno')
+		// var faltas= prompt('Digite a qtd de faltas')
+		// var media=7
+		// var faltas_maximas = 15
+
+		// // if(nota>=media && faltas<=15 ){
+		// // 	document.write('O aluno foi APROVADO')
+		// // }
+		// // else{
+		// // 	document.write('O aluno foi REPROVADO')
+		// // }
+
+
+
+		// //OPERADOR TERNÁRIO
+
+		// // var resultado=<condição> ? <verdadeiro>:<falso>
+		// var resultado= (nota>=media && faltas<=faltas_maximas)? 'Aprovado': 'Reprovado'
+		// document.write(resultado)
+
+
+
+		//ATIVIDADE PARA FIXAÇÃO
+		//Identifica a faixa etária do aluno
+
+		//MODO 1 - IFELSE
+		// var idade = prompt('Informe a idade do Aluno')
+
+		// if(idade >= 0 && idade<15){
+		// 	document.write('Criança')
+		// } else if(idade >= 15 && idade < 30){
+		// 	document.write('Jovem')
+		// } else if(idade >= 30 && idade < 60){
+		// 	document.write('Jovem')
+		// } else {
+		// 	document.write('Idoso')
+		// }
+
+
+		//MODO 2 
+		
+var idade=null
+repeticoes=4
+while(repeticoes){
+	var idade = prompt('Informe a idade do Aluno')
+	if(idade >= 0 && idade<15){
+			resultado='Criança'
+		} else if(idade >= 15 && idade < 30){
+			resultado='Jovem'
+		} else if(idade >= 30 && idade < 60){
+			resultado='Adulto'
+		} else {
+			resultado='Idoso'
+		}
+
+		alert(resultado)
+		repeticoes=repeticoes-1
+}
+		
+
+
+
+
+
+	</script>
+
+</head>
+<body>
+
+ 
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Atividade para Fixação do Conteúdo Aula 172</title>
+
+	<script>
+	// //void retorno	
+	// function calcularAreaTerreno(largura, comprimento){
+	// 	// lógica
+
+	// 	var area=largura*comprimento
+
+	// 	return area
+	// }
+
+	// var largura = prompt('Digite a largura do terreno em metros')
+	// var comprimento = prompt('Digite a comprimento do terreno em metros')
+
+	// var area = calcularAreaTerreno(largura,comprimento)
+
+	// document.write('O terrreno posusi '+area+" metros quadrado")
+
+	// sobre a flexibilidade de funções
+	// function soma(a,b){
+	// 	return 7 + undefined = not a number // quando não passo todos os parâmetros
+	// }
+
+// function soma(5 7) // o 6 não era previsto, será ingnorado 
+
+// function soma(a,b){
+// 	b= b === undefined ? 0 : b // caso o valor de b não for undefined atribuirá o valor recebido à variável b, caso contrário, atribuirá 0. 
+// }
+
+
+
+	// sobre a flexibilidade de funções
+	function soma(a,b){
+		b = b===undefined ? 0:b
+			// a = a===undefined ? 0:a
+		return a+b
+	}
+	console.log(soma(7,7))
+	console.log(soma(7,7,9,15)) // desconsidera os parâmetros acidionais
+	console.log(soma(7))
+	console.log(soma())
+
+	document.write(soma(7,7))
+	document.write(soma(7,7,9,15))
+	document.write(soma(7))
+	document.write(soma())
+
+
+
+	</script>
+
+</head>
+<body>
+
+ 
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+
+</body>
+</html>

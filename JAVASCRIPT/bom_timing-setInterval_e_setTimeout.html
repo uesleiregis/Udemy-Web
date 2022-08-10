@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript</title>
+
+	<script>
+		/*var function exibirArtigo(id, callbackSucesso, callbackErro){
+			//Lógica: recuperar o id via requisição HTTP
+			if(true){
+				callbackSucesso('Funções de callback em JS', 'Funções de callback são muito utilizadas.....')
+			}else{
+				callbackErro('Erro ao recuperar os dados')
+			}
+		}
+
+		// exibirArtigo(1, function(){}, function(){})
+
+		var callbackSucesso = function(titulo,descricao){
+			document.write('<h1>'+ titulo+ '</h1>')
+			document.write('<hr>')
+			document.write('<p>'+ descricao +'</p>')
+
+		}
+
+		var callbackErro = function(erro){
+			document.write('<p><b>Erro: </b>'+ erro + '</p>')
+		}
+
+		exibirArtigo(1, callbackSucesso, callbackErro){
+
+		}*/
+
+
+		//setTimeout(function(){},2000) // Padrão da função
+
+
+		// setTimeout(function(){document.write('teste')},2000) // Padrão da função
+
+
+		// var i = 0
+		// x=setInterval(function(){
+		// 	document.write(i)
+		// 	i=++i// se eu fizer i++ cai num loop porque o i nunca vai chegar a 3
+		// 	if(i==3){
+		// 		clearInterval(x)
+		// 	}
+		// },1000) // Padrão da função
+
+		
+
+		//TESTE 1 !! ficou massa!!ficou
+		// PERMITE REPETIR UM TRECHO DE CÓDIGO QUANTAS VEZES QUIZER NO INTERVALO DE TEMPO QUE QUISER
+		
+	// function intervalTime(n,t){
+	// 	var i=0
+	// 		g=function(){
+	// 			//Ponha seu código aqui - início
+				
+	// 					document.write('Isso é um Teste <br>')
+
+	// 			//fim do seu código
+	// 			i=++i
+	// 			if(i==n){
+	// 				clearInterval(f)
+	// 			}
+	// 		}
+
+	// 		f = setInterval(g, t)
+	// }
+			
+	// intervalTime(4,1000)
+
+
+
+// CASO 2 - Atualiza a página quanto contar 5
+	var i = 5
+
+	x = setInterval(function()
+		{	
+			document.write(i)
+			i--
+			if(i=== 0){
+				clearInterval(x)
+				//window.location.reload()
+			}
+		}, 1000)
+
+			
+	
+	
+		
+
+
+
+
+	</script>
+
+</head>
+<body>
+
+
+
+
+
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+	</script>
+
+</body>
+</html>

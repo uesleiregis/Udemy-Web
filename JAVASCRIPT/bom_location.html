@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bom Screen</title>
+
+	<script>
+		
+		//https://www.w3schools.com/jsref/obj_location.asp
+
+	//	window.location.href = "http://www.google.com" // Faz a página ser redirecionada para o endereço acima o endereço
+	function redireciona(site){
+		var x = site
+		try{
+			window.location.href = x
+		}
+	}
+
+// 'http://www.faus.com.br'
+	</script>
+
+</head>
+<body>
+
+
+ 	<button onclick="location.href= 'http://www.google.com.br'">Acessar Google</button>
+ 	<button onclick="redireciona('http://www.google.com.br')">Teste Try</button>
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+
+</body>
+</html>

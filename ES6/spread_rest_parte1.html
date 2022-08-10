@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+<!-- Aula 266 Spread/Rest -->
+<script type="text/babel">
+//// Contexto Spreading
+
+// let tituloArtigo = 'Como utilizar o operador rest/spread'
+
+
+
+
+
+// //String
+// console.log(tituloArtigo)
+// console.log(...tituloArtigo) // espalhando string na impressão
+// console.log([...tituloArtigo]) // espalhando num array
+
+// //arrays
+// let listaCursos1 = ['NodeJS e MongoDB', 'ES6, TypeScript e Angular4']
+// let listaCursos2 = ['Multiplataforma Androis/IOS', 'Introdução ao GNU/Linux']
+// let listaCursosCompleto = ['Web Completo', 'Android Completo',...listaCursos1,...listaCursos2]
+// console.log(listaCursosCompleto)
+
+
+// //Objetos
+
+// 	let pessoa = { nome: 'João', idade: 27}
+// 	let clone = { endereco: 'Rua Abc', ...pessoa}
+// 	console.log(clone)
+
+// //---------------------------------
+
+// REVENDO A AULA - SPREAD
+
+// String
+let tituloArtigo = "Como utilizar o operador rest/spread"
+
+
+console.log(tituloArtigo)
+console.log(...tituloArtigo)
+//C o m o   u t i l i z a r   o   o p e r a d o r   r e s t / s p r e a d
+
+console.log([...tituloArtigo]) // Dentro de uma array
+//['C', 'o', 'm', 'o', ' ', 'u', 't', 'i', 'l', 'i', 'z', 'a', 'r', ' ', 'o', ' ', 'o', 'p', 'e', 'r', 'a', 'd', 'o', 'r', ' ', 'r', 'e', 's', 't', '/', 's', 'p', 'r', 'e', 'a', 'd']
+
+
+let t2 = [...tituloArtigo] // Guardando espalhado numa variável
+
+
+
+// Array
+let listaCursos1 = ['NodeJS e MongoDB', 'ES6, TypeScript e Angular 4']
+let listaCursos2 = ['Multiplataforma Android/IOS', 'Introdução ao GNU/Linux']
+let listaCursosCompleto = ['Web Completo', 'Android Completo']
+let todos = [...listaCursosCompleto,...listaCursos1,...listaCursos2]
+
+console.log(todos)
+
+// outra formação
+let listaCursosCompleto2 =  ['Web Completo',...listaCursos1, 'Android Completo', ...listaCursos2]
+console.log(listaCursosCompleto2)
+
+// Notar que se esquesermos o operador spread o respectivo item da lista vai ser o objeto inteiro
+
+// Exemplo de saída:
+// ['Web Completo', 'Android Completo', 'NodeJS e MongoDB', 'ES6, TypeScript e Angular 4', Array(2)]
+
+//Objetos
+let pessoa = {nome: 'Pedro', idade: 27}
+let clone = {endereco: 'Rua Abc', ...pessoa}
+
+console.log(clone)
+
+
+</script>
+
+<body>
+
+
+
+
+</body>
+
+</html><script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>

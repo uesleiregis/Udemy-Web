@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+<script type="text/babel">
+// AULA 251
+
+/*DESAFIO:
+- loja que fabrica sofás e cadeiras.
+	>> implementar o sofá.
+		> Sugestão de atributos
+			- cor
+			- qtd de lugares
+			- reclinavel: true/false
+		> Sugestão de método
+			- reclinar sofá
+
+*/
+
+// class Sofa{
+// 	constructor(cor, qtdLugares, reclinavel){
+// 		this.cor = 'branco'
+// 		this.qtdLugares = 4
+// 		this.reclinavel = false
+// 	}
+// 	reclinar(){
+// 		return this.reclinavel
+// 	}
+// }
+
+// let x = new Sofa()
+// console.log(reclinar())
+
+
+
+
+// -----------------------------
+
+// PARADIGMA DE OO
+
+// class Cadeira {
+// 	constructor(qtd_pernas, giratoria, cor){
+// 		this.qtd_pernas = qtd_pernas
+// 		this.giratoria = giratoria
+// 		this.cor = cor
+// 	}
+// 	girarCadeira(){
+// 		if(this.giratoria === true){
+// 			console.log('girou')
+// 		} else {
+// 			console.log('cadeira não é giratória')
+// 		}
+// 	}
+
+// }
+
+// let cadeiras = Array()
+
+// cadeiras.push(new Cadeira (4, false, 'azul'))
+// cadeiras.push(new Cadeira (1, true, 'vermelha'))
+
+// console.log(cadeiras)
+
+
+// -------------------------------------------------
+
+// // PARADIGMA PROCEDURAL
+
+// //  Um software de marcenaria
+// // cadeira e sofá
+
+// // Cadeira
+// let qtd_pernas = 4
+// let giratoria  = false
+// let cor = 'azul'
+
+// // Array de cadeiras
+// let cadeiras = Array()
+
+// cadeiras[0] = Array()
+// cadeiras[0]['qtde_pernas'] = 4
+// cadeiras[0]['giratoria'] = false
+// cadeiras[0]['cor'] = 'azul'
+
+
+// cadeiras[1] = Array()
+// cadeiras[1]['qtde_pernas'] = 1
+// cadeiras[1]['giratoria'] = true
+// cadeiras[1]['cor'] = 'vermelha'
+
+// console.log(cadeiras)
+
+
+
+
+// function girar_cadeira(indice){
+// 	if(cadeiras[indice]['giratoria'] === true){
+// 		console.log('girou')
+// 	} else{
+// 		console.log('Cadeira não é giratória')
+// 	}
+// }
+
+
+// function adicionar_cadeira(qtd_pernas, giratoria, cor)
+// {
+// 	let cadeira = Array()
+// 	cadeira['qtd_pernas'] = qtd_pernas
+// 	cadeira['giratoria'] = giratoria
+// 	cadeira['cor'] = cor
+
+// 	cadeiras.push(cadeira)
+// }
+
+// adicionar_cadeira(3, false, 'verde')
+
+// console.log(cadeiras)
+// // girar_cadeira(cadeiras)
+//------------------------------------
+
+// REASSISTINDO A AULA
+
+// software de marcenaria
+// cadeira e sofá
+
+// paradigma procedurall
+
+// // cadeira
+// let qtd_pernas = 4
+// let giratoria = true
+// let cor = 'azul'
+
+//array de cadeiras
+let cadeiras = Array()
+
+cadeiras[0] = Array()
+cadeiras[0]['qtde_pernas'] = 4
+cadeiras[0]['giratoria'] =   false
+cadeiras[0]['cor'] = 'azul'
+
+cadeiras[1] = Array()
+cadeiras[1]['qtde_pernas'] = 1
+cadeiras[1]['giratoria'] =   true
+cadeiras[1]['cor'] = 'vermelha'
+
+console.log(cadeiras)
+
+
+function girar_cadeira(indice) {
+	if(cadeiras[indice]['giratoria'] == true){
+
+		console.log('girou')
+
+	}else{
+		console.log('cadeira não é giratória')
+	}
+}
+
+girar_cadeira(1)
+
+
+function adicionar_cadeira(qtde_pernas, giratoria, cor){
+	let cadeira = Array()
+	cadeira['qtde_pernas'] = qtde_pernas
+	cadeira['giratoria'] = giratoria
+	cadeira['cor'] = cor
+
+	cadeiras.push(cadeira) // !! adiciona um novo índice no Array Cadeiras !!
+}
+
+adicionar_cadeira(4, true, 'roxa')
+
+console.log(cadeiras)
+
+
+
+// PARADIGMA OO
+
+class Cadeira {
+	constructor (qtd_pernas, giratoria, cor){
+		this.cor = cor
+		this.qtd_pernas = qtd_pernas
+		this.giratoria = giratoria
+		
+	}
+
+	girarCadeira(){
+		if (this.giratoria === true){
+			console.log('girou')
+		} else {
+			console.log('cadeira não é giratória')
+		}
+	}
+}
+
+let cadeiras2 = Array()
+
+cadeiras2.push(new Cadeira(4, false, 'azul'))
+cadeiras2.push(new Cadeira(1, true, 'vermelha'))
+
+// cadeira2.girarCadeira()
+
+console.log(cadeiras)
+
+
+//************************
+class Sofa{
+	constructor(cor, qtd_lugares, reclinavel){
+		this.cor = cor
+		this.qtd_lugares = qtd_lugares
+		this.reclinavel = reclinavel
+	}
+
+	reclinar(){
+		if(this.reclinavel === true){
+			console.log('reclinável')
+		} else{
+			console.log('Sofá não é reclinável')
+		}
+	}
+}
+// criar objeto Sofá
+
+let sofas = Array()
+
+sofas[0] = new Sofa('vermelho', 3, true)
+sofas[0].reclinar()
+
+
+sofas.push(new Sofa ('roxo',3, false))
+console.log(sofas)
+
+// Criar array com 3 cadastros
+
+
+
+// consultar se o sofá é reclinável
+
+//-------------------- --------------------------------------------
+// Curiosidade: Uma variável gloval é um atributo do objeto Window
+let nome = 'Ueslei'
+var nome2 = ' Regis'
+console.log(nome+window.nome2)
+console.log(window.nome)
+
+
+
+</script>
+
+<body>
+
+
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>

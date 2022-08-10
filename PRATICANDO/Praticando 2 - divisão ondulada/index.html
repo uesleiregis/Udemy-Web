@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Divisão ondulada</title>
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200&family=Open+Sans&display=swap" rel="stylesheet">
+
+	<style>
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100&display=swap');
+</style>
+
+	<style type="text/css">
+
+
+		*{
+			border: none;
+		}
+		body{
+			margin:0; padding: 0;
+			background: #F5F5F5;
+			font-family: 'Be Vietnam Pro', sans-serif;
+			font-family: 'Open Sans', sans-serif;
+
+
+		}
+		section{
+			margin: 20px 0;
+		}
+
+
+		footer{
+			/*background: #121212;*/
+			background: #7B7DFA;
+		}
+
+		.conteudo h3{
+			color: #F05454;
+		}
+	
+		
+
+		#topo{
+			width: 100%;
+			height: 250px;
+			background-color: blue;
+			margin-bottom: -220px;
+			background: url('terra-tec.jpg') no-repeat center center ;
+			background-size: cover;
+			opacity: 0.5;
+			filter: alpha(opacity=50); 
+			filter: saturate(8);
+			border-left: white;
+		}
+
+		header{
+			margin-top: 0px;
+			text-shadow: 5px 2px 2px rgba(150, 150, 150,1);
+			margin-bottom: 65px;
+		}
+
+		.sombra{
+			text-shadow: 5px 2px 2px rgba(150, 150, 150,0.5);
+		}
+
+		.bg-svg{
+			fill: #F5F5F5;
+			transform:scaleY(-1);
+			
+			position: relative;
+			bottom: 10px;
+			left: -2px;
+			border-color: red;
+			width: 110%;
+
+			
+		}
+
+		.bg-svg-top
+		{
+			fill: #F5F5F5;
+			position: relative;
+			top: 150px;
+			padding-left: -1px;
+			width: 103%;
+			left:-2px;
+
+		}
+		footer{
+			border-color: white;
+		}
+
+
+
+
+	</style>
+
+</head>
+<body>
+
+
+<div id="topo" >
+	
+	<svg  class="bg-svg-top" viewBox="0 0 1711 186" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+		<g transform="matrix(1,0,0,1,-217,-426)">
+			<g transform="matrix(1,3.05154e-17,-3.05154e-17,-0.750823,-54.8222,702.373)">
+				<clipPath id="_clip1">
+					<rect x="272.475" y="121.436" width="1710.15" height="246.425"/>
+				</clipPath>
+				<g clip-path="url(#_clip1)">
+					<path d="M276.007,234.166C280.639,243.429 449.799,369.148 652.745,336.54C757.276,319.745 825.449,195.072 932.568,189.121C1023.27,184.082 1102.35,266.555 1178.27,271.021C1277.47,276.856 1333.96,173.589 1434.88,167.281C1514.54,162.303 1554.39,234.144 1623.25,257.371C1691.51,280.391 1805.52,178.271 1823.91,171.376C1850.94,161.24 1877.22,192.61 1903.08,197.311C1961.3,207.896 1995.37,147.952 1978.15,96.302C1975.88,89.484 1972.05,76.551 1968.6,73.097C1953.97,58.47 1616.48,64.907 1580.94,64.907C1378.37,64.907 1174.52,54.177 972.153,60.812C861.409,64.443 751.329,82.857 640.46,86.747C573.539,89.095 503.9,90.155 437.076,85.382C388.031,81.879 335.049,63.297 285.562,70.367C271.359,72.396 278.737,127.647 278.737,135.887C278.737,151.171 269.863,221.877 276.007,234.166Z"/>
+					<path d="M269.348,240.072C267.015,235.404 265.618,224.221 265.89,210.133C266.389,184.262 270.737,146.547 270.737,135.887C270.737,129.881 267.175,99.884 269.989,81.705C271.996,68.739 277.325,60.828 284.709,59.773C334.612,52.644 388.047,71.21 437.504,74.742C504.118,79.5 573.538,78.436 640.249,76.096C751.123,72.205 861.208,53.791 971.956,50.16C1174.39,43.523 1378.3,54.252 1580.94,54.252C1609.4,54.252 1831.32,50.137 1926.44,55.985C1943.55,57.036 1956.66,58.441 1964.02,60.198C1968.9,61.361 1972.01,63.182 1973.4,64.576C1975.06,66.239 1976.92,69.117 1978.6,72.84C1981.22,78.619 1983.77,86.886 1985.46,91.978C2004.91,150.337 1967.77,219.828 1901.99,207.868C1888.44,205.404 1874.73,196.153 1860.91,188.645C1849.42,182.4 1837.86,177.214 1826.08,181.633C1815.11,185.744 1769.97,224.038 1720.93,248.985C1686.38,266.558 1649.96,277.37 1621.29,267.7C1586.19,255.862 1558.43,231.786 1529.35,211.153C1502.01,191.756 1473.42,175.539 1435.26,177.925C1386.02,181.002 1347.68,207.998 1309.49,233.249C1269.17,259.903 1229.01,284.671 1177.91,281.665C1139.16,279.386 1099.56,257.44 1058.12,236.467C1018.52,216.422 977.146,197.309 932.901,199.767C880.72,202.666 838.117,234.816 795.736,267.953C751.297,302.699 707.097,338.54 653.703,347.119C489.231,373.545 346.663,297.318 293.813,260.967C284.237,254.381 277.517,249.032 274.007,245.765C271.309,243.254 269.871,241.117 269.348,240.072ZM1964.19,82.147C1961.68,81.664 1944.28,78.414 1925.71,77.272C1830.78,71.437 1609.34,75.562 1580.94,75.562C1378.43,75.562 1174.65,64.831 972.349,71.464C861.611,75.095 751.535,93.508 640.67,97.398C573.539,99.754 503.681,100.81 436.648,96.022C388.209,92.562 335.907,74.1 287.009,80.881C286.798,81.39 286.423,82.342 286.247,83.039C285.553,85.781 285.2,89.12 285.003,92.712C284.076,109.551 286.737,131.03 286.737,135.887C286.737,146.625 282.388,184.621 281.884,210.681C281.787,215.714 281.835,220.253 282.13,223.95C282.228,225.176 282.475,226.723 282.642,227.676C284.9,229.646 292.28,235.929 301.154,242.033C352.645,277.449 491.546,351.708 651.787,325.962C702.923,317.746 745.076,282.853 787.636,249.576C832.254,214.689 877.298,181.528 932.234,178.476C978.696,175.894 1022.22,195.498 1063.8,216.546C1103.56,236.666 1141.45,258.19 1178.62,260.376C1226.73,263.206 1264.41,239.258 1302.37,214.161C1342.46,187.66 1382.83,159.868 1434.51,156.638C1476,154.045 1507.16,171.26 1536.87,192.346C1564.85,212.195 1591.45,235.653 1625.22,247.042C1651.15,255.788 1683.97,244.971 1715.22,229.077C1764.86,203.824 1810.64,165.282 1821.74,161.12C1836.99,155.402 1852.08,160.832 1866.95,168.914C1879.5,175.732 1891.85,184.517 1904.16,186.754C1954.83,195.968 1985.83,145.583 1970.84,100.625C1969.54,96.726 1967.72,90.72 1965.75,85.835C1965.17,84.4 1964.72,83.006 1964.19,82.147Z"/>
+				</g>
+			</g>
+		</g> <!-- fim transform -->
+	</svg> <!-- fim svg -->
+</div>
+
+<header class="w-100  pt-4 pb-4 px-auto ">
+	<div class="container">
+		<div class="row">
+			<div class="col text-center">
+				
+				<h1>Sites Mídia  </h1>
+				<h4>Sites responsivos e humanos para o seu negócio</h4>
+
+			</div>
+		</div>
+	</div>
+</header>
+
+<section id="conteudo ">
+	<div class="container">
+		<div class="row">
+			<div class="col textos  ">
+				<h3 class="sombra">Notícia Última Hora</h3>
+				<h4 class="sombra">Covid dispara 600% em Brasília</h4>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+			</div>
+			<div class="col textos">
+				
+				<h3 class="sombra">Destaques</h3>
+				<h4 class="sombra">Custo de vida em Natal amplia mais uma vez</h4>
+				
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+
+				<h4 class="sombra">Custo de vida em Natal amplia mais uma vez</h4>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+
+			
+			</div>
+		</div>
+	</div>
+</section>
+
+<div class="bg">
+	
+</div>
+
+
+<footer class=" pt-0 text-secondary">
+
+
+<svg  class="bg-svg" viewBox="0 0 1711 186" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+		<g transform="matrix(1,0,0,1,-217,-426)">
+			<g transform="matrix(1,3.05154e-17,-3.05154e-17,-0.750823,-54.8222,702.373)">
+				<clipPath id="_clip1">
+					<rect x="272.475" y="121.436" width="1710.15" height="246.425"/>
+				</clipPath>
+				<g clip-path="url(#_clip1)">
+					<path d="M276.007,234.166C280.639,243.429 449.799,369.148 652.745,336.54C757.276,319.745 825.449,195.072 932.568,189.121C1023.27,184.082 1102.35,266.555 1178.27,271.021C1277.47,276.856 1333.96,173.589 1434.88,167.281C1514.54,162.303 1554.39,234.144 1623.25,257.371C1691.51,280.391 1805.52,178.271 1823.91,171.376C1850.94,161.24 1877.22,192.61 1903.08,197.311C1961.3,207.896 1995.37,147.952 1978.15,96.302C1975.88,89.484 1972.05,76.551 1968.6,73.097C1953.97,58.47 1616.48,64.907 1580.94,64.907C1378.37,64.907 1174.52,54.177 972.153,60.812C861.409,64.443 751.329,82.857 640.46,86.747C573.539,89.095 503.9,90.155 437.076,85.382C388.031,81.879 335.049,63.297 285.562,70.367C271.359,72.396 278.737,127.647 278.737,135.887C278.737,151.171 269.863,221.877 276.007,234.166Z"/>
+					<path d="M269.348,240.072C267.015,235.404 265.618,224.221 265.89,210.133C266.389,184.262 270.737,146.547 270.737,135.887C270.737,129.881 267.175,99.884 269.989,81.705C271.996,68.739 277.325,60.828 284.709,59.773C334.612,52.644 388.047,71.21 437.504,74.742C504.118,79.5 573.538,78.436 640.249,76.096C751.123,72.205 861.208,53.791 971.956,50.16C1174.39,43.523 1378.3,54.252 1580.94,54.252C1609.4,54.252 1831.32,50.137 1926.44,55.985C1943.55,57.036 1956.66,58.441 1964.02,60.198C1968.9,61.361 1972.01,63.182 1973.4,64.576C1975.06,66.239 1976.92,69.117 1978.6,72.84C1981.22,78.619 1983.77,86.886 1985.46,91.978C2004.91,150.337 1967.77,219.828 1901.99,207.868C1888.44,205.404 1874.73,196.153 1860.91,188.645C1849.42,182.4 1837.86,177.214 1826.08,181.633C1815.11,185.744 1769.97,224.038 1720.93,248.985C1686.38,266.558 1649.96,277.37 1621.29,267.7C1586.19,255.862 1558.43,231.786 1529.35,211.153C1502.01,191.756 1473.42,175.539 1435.26,177.925C1386.02,181.002 1347.68,207.998 1309.49,233.249C1269.17,259.903 1229.01,284.671 1177.91,281.665C1139.16,279.386 1099.56,257.44 1058.12,236.467C1018.52,216.422 977.146,197.309 932.901,199.767C880.72,202.666 838.117,234.816 795.736,267.953C751.297,302.699 707.097,338.54 653.703,347.119C489.231,373.545 346.663,297.318 293.813,260.967C284.237,254.381 277.517,249.032 274.007,245.765C271.309,243.254 269.871,241.117 269.348,240.072ZM1964.19,82.147C1961.68,81.664 1944.28,78.414 1925.71,77.272C1830.78,71.437 1609.34,75.562 1580.94,75.562C1378.43,75.562 1174.65,64.831 972.349,71.464C861.611,75.095 751.535,93.508 640.67,97.398C573.539,99.754 503.681,100.81 436.648,96.022C388.209,92.562 335.907,74.1 287.009,80.881C286.798,81.39 286.423,82.342 286.247,83.039C285.553,85.781 285.2,89.12 285.003,92.712C284.076,109.551 286.737,131.03 286.737,135.887C286.737,146.625 282.388,184.621 281.884,210.681C281.787,215.714 281.835,220.253 282.13,223.95C282.228,225.176 282.475,226.723 282.642,227.676C284.9,229.646 292.28,235.929 301.154,242.033C352.645,277.449 491.546,351.708 651.787,325.962C702.923,317.746 745.076,282.853 787.636,249.576C832.254,214.689 877.298,181.528 932.234,178.476C978.696,175.894 1022.22,195.498 1063.8,216.546C1103.56,236.666 1141.45,258.19 1178.62,260.376C1226.73,263.206 1264.41,239.258 1302.37,214.161C1342.46,187.66 1382.83,159.868 1434.51,156.638C1476,154.045 1507.16,171.26 1536.87,192.346C1564.85,212.195 1591.45,235.653 1625.22,247.042C1651.15,255.788 1683.97,244.971 1715.22,229.077C1764.86,203.824 1810.64,165.282 1821.74,161.12C1836.99,155.402 1852.08,160.832 1866.95,168.914C1879.5,175.732 1891.85,184.517 1904.16,186.754C1954.83,195.968 1985.83,145.583 1970.84,100.625C1969.54,96.726 1967.72,90.72 1965.75,85.835C1965.17,84.4 1964.72,83.006 1964.19,82.147Z"/>
+				</g>
+			</g>
+		</g> <!-- fim transform -->
+	</svg> <!-- fim svg -->
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<i class="far fa-copyright "></i> Todos os direitos reservados.
+			</div>
+		</div>
+	</div>
+
+<div id="contorno-branco">
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+	</script>
+
+</div>
+	
+</footer>
+
+
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript</title>
+
+	<script >
+		function distribuiCaracter(){
+
+		//selecionar o valor digitado
+		var caracter = document.getElementById("entrada").value
+
+		//limpar o campo de digitação
+		document.getElementById("entrada").value = ''
+
+		console.log(caracter)
+
+		//limpar espaços em branco nas extremidades da string
+		caracter.trim()
+
+		switch(caracter){
+			case '0':
+			case '1':
+			case '2':
+			case '3':
+			case '4':
+			case '5':
+			case '6':
+			case '7':
+			case '8':
+			case '9':
+			//adicionar o caractere no campo referente a número
+			break
+			default:
+			//adicionar o caractere no campo referente a letras
+		}
+	}
+	</script>
+
+	
+
+</head>
+<body>
+
+
+	<input type="text" placeholder="Digite um caractere aqui" onkeyup="distribuiCaracter()" id="entrada">
+
+	<hr> 
+	<span>Letras</span>
+	<input type="text">
+	<input type="text" placeholder="Digite um caractere aqui" >
+
+	<span>Números:</span>
+	<input type="text" disabled="disabled" >
+
+
+
+
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+</body>
+</html>

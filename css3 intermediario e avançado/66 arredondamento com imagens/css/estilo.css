@@ -1,0 +1,69 @@
+/*Jeito do professor 1 -  ruim para mais de um parágrafo*/
+/*
+.caixa{
+	width: 400px;
+	background: #dedede url(../imagens/topo.png) no-repeat left top;
+
+}
+.caixa h2{
+
+	padding: 10px 20px 0 20px;
+	border: 1px solid red;
+	
+}
+
+.caixa p{
+	background: url(../imagens/baixo.png) no-repeat left bottom;
+	padding: 0px 20px 20px 20px;
+	border: 1px solid red;
+}
+
+*/
+
+/* Professor 1 - bordas arredondadas - parágrafo último com classe */
+
+/*
+.caixa{
+	width: 400px;
+
+	background: #dedede url(../imagens/fundo-arredondamento.png) repeat-y ;
+
+}
+.caixa h2{
+	background: #dedede url(../imagens/topo2.png) no-repeat left top;
+	padding: 10px 20px 0 20px;
+}
+
+.caixa p{
+	padding: 0 20px;
+}
+
+.caixa .ultimo{
+	background: url(../imagens/baixo2.png) no-repeat left bottom;
+	padding-bottom: 20px;
+}
+
+*/
+
+/*Professor 2 - div com class último - inúmeros parágrafos, não importa o tamanho do texto*/
+
+.caixa{
+	width: 400px;
+	background: #dedede url(../imagens/fundo-arredondamento.png) repeat-y ;
+}
+.caixa h2{
+	background: #dedede url(../imagens/topo2.png) no-repeat left top;
+	padding: 10px 20px 0 20px;
+}
+
+.caixa p{
+	padding: 0 20px;
+	border: 1px solid red;
+	margin-bottom: 0;
+}
+
+.caixa .ultimo{
+	background: url(../imagens/baixo2.png) no-repeat left bottom;
+	width: 400px;
+	height: 24px;
+	border: 1px solid red;

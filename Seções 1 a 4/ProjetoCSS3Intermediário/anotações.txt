@@ -1,0 +1,8 @@
+ao dimensionar as bordas 
+
+
+.clear{
+			clear: right;
+		}
+
+//right, none, left, both

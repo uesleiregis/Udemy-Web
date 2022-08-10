@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Atividade para Fixação do Conteúdo Aula 172</title>
+
+	<script>
+		// Ver referência em Js reference >> window >> objetct window
+
+		var janela
+
+		function abrirPopUp(){
+		 janela = window.open('http://www.google.com', 'nova_janela','width=200, height=200')
+		}
+
+		function fecharPopUp(){
+			janela.close() // recupero a janela e executo o método close, do objeto window atribuido na função abrirPopUp a uma variável que já existia.já
+			// var janela >> janela se torna objeto window>> executo em fecharPopUp o atributo do objeto janela do tipo window.tipo 
+		}
+	
+
+	</script>
+
+</head>
+<body>
+
+	<button onclick="abrirPopUp()">Abrir Janela</button>
+	<button onclick="fecharPopUp()">Fechar Janela</button>
+	<button onclick="window.print()">Imprimir Página</button>
+
+ 
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+
+</body>
+</html>

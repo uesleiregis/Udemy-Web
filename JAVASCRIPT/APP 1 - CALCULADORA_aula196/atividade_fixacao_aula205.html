@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript</title>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+	<script>
+		//Recuperar o valor contido no campo texto
+		var objetos = Array('Cadeira', 'Impressora', 'Garfo')
+
+		function adicionarObjetos(){
+			//Recuperar o valor contido no campo texto
+			var campo_texto = document.getElementById('objeto').value
+
+			//Se o campo estiver preenchido, entra no if
+			if(campo_texto != ''){
+
+			// Verificar se o objeto foi adicionado anterioremente
+			// Se sim, informar que o ojeto já existe
+			// Se não, inserir o novo valor
+
+			//objeto já foi adicionado anteriormente
+				if( objetos.indexOf(campo_texto) !== -1 )
+				{
+					alert('O objeto já foi adicionado')
+				}
+				else{ // Objeto foi adicionado anteriormente
+					
+
+
+					objetos.push(campo_texto)
+					console.log(objetos)
+
+					document.getElementById=('objeto').value=''
+				}
+
+			} else{
+
+				//alerta, quando vasio
+				alert('Informe uma entrada válida')
+
+			}
+		}
+
+		function ordenarObjetos(){
+			objetos.sort()
+			console.log(objetos)
+		}
+		
+
+
+	</script>
+
+</head>
+<body class="bg-light">
+
+<div class="container text-center">
+	<h1 class="display-5 my-3">Atividade Fixação</h1>
+	<p class="lead mb-4">Aula 205</p>
+
+<input class="form-control mb-3 shadow" id="objeto" type="text" placeholder="Escreva aqui"/>
+
+<button onclick="adicionarObjetos()" class="btn btn-success d-inline-block shadow" style="margin-right:20px;" type="button">Adicionar</button>
+
+<button onclick="ordenarObjetos()" class="btn btn-info d-inline-block shadow" style="margin-left: 20px;"  type="button">Ordenar</button>
+</div>
+
+	
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>

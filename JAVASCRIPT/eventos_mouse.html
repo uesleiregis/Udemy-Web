@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript</title>
+
+	<script>
+		//onclick 
+		
+		function acao1(){
+			alert('elemento foi clicado')
+		}
+		
+		function acao2(){
+			alert('o cursor do mouse deixou a região do elemento')
+		}
+
+	</script>
+
+</head>
+<body>
+
+	<div onmouseout="acao2()" onclick="acao1()" style="background: #ccc; height: 150px; width:150px;">
+
+	</div>
+
+
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+	</script>
+
+</body>
+</html>

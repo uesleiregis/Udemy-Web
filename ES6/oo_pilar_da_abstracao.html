@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+
+<!-- babeljs.io  >> docs >> setup >> prototipe in browser >> babel stand alone -->
+
+
+<!-- Link do babel -->
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+<script type="text/babel">
+
+class ContaBancaria{ //--- Cria um modelo de objeto
+	//agencia
+	//numero
+	//conta
+	//limite
+
+	constructor(){ // --- Características que fazem sentido para o meu négócio
+		this.agencia = 1075 // --- this liga o atributo ao objeto da classe
+		this.numeroConta = 8351125
+		this.saldo = 50
+		this.limite = 450
+	}
+	depositar(valorDeposito){//--- Comportamento/Ações q atendem a necess do negócio
+		this.saldo += valorDeposito
+	}
+	sacar(valorSaque){
+		this.saldo -= valorSaque
+	}
+	consultarSaldo(){
+		return this.saldo
+	}
+}
+
+	let x = new ContaBancaria()
+	let y = new ContaBancaria()
+
+	console.log(x.consultarSaldo())
+	// x.depositar(450)
+	// console.log(x.consultarSaldo())
+	// x.sacar(200)
+	// console.log(x.consultarSaldo())
+	// console.log(y.consultarSaldo())  // Preservou a identidade. Nada foi alterado.
+
+
+// ------------------------------------------------------ ------------------- 
+
+// modelo de objeto 
+class ContaBancaria2{
+	constructor(){
+		this.agencia = 1075
+		this.numeroConta = 8351125
+		this.saldo = 50
+		this.limite = 450
+	}
+
+	depositar(valorDeposito) {
+		this.saldo += valorDeposito
+	}
+
+	sacar (valorSaque){
+		this.saldo -= valorSaque
+	}
+	consultarSaldo(){
+		return this.saldo
+	}
+}
+
+
+let a = new ContaBancaria2()
+let b = new ContaBancaria2()
+
+
+console.log(a.consultarSaldo())
+a.depositar(450)
+console.log(a.consultarSaldo())
+a.depositar(100)
+a.sacar(200)
+console.log(a.consultarSaldo())
+
+console.log(b.consultarSaldo())
+
+</script>
+
+
+
+
+</head>
+<body>
+
+
+
+
+
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>

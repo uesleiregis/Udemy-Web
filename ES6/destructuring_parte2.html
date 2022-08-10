@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+<script type="text/babel">
+
+let produto = {
+	descricao: 'Notebook',
+	preco: 1800,
+	detalhes: {
+		fabricante: 'abc',
+		modelo: 'xyz' // undefined
+	}
+}
+// Composição
+
+// composição 'É UM', 'Composição é alguma coisa'
+//Quando criamos objetos a partir de objetos litetais, funções construtoras ou classes, temos uma 
+
+// Composição 'TEM UM'
+//Objeto é o valor do atributo de outro objeto.
+// Nosso objeto produto 'Tem um Detalhes', esse objeto tem seus atr4ibutos (não sei se tem métodos também). 
+
+
+
+
+//tokEN
+//Array => []
+//Objeto => {}
+
+let {descricao, preco} = produto
+console.log(descricao, preco)
+//Notebook 1800
+
+// Digamos q eu preciso tirar os valores dentro do objeto, mas quero dar um nome diferente para a chave.
+
+let {descricao: d, preco: p} = produto 
+// var.  conterá o valor extraído do objeto
+
+console.log(d, p)
+//Notebook 1800
+
+// --- extraindo atributo que não existe dentro do objeto ...
+
+let {descricao: d, preco: p, desconto: x} = produto 
+console.log(d, p, x)
+Notebook 1800 undefined
+
+--------------------- Valor default
+
+let {descricao: d, preco: p, desconto: x = 100} = produto 
+console.log(d, p, x)
+Notebook 1800 100
+
+
+ou 
+
+let {descricao: d, preco: p, desconto = 100} = produto 
+console.log(d, p, desconto)
+Notebook 1800 100
+
+---------- default para atributo que não retorne undefined
+o valor original se mantém
+
+let {descricao: d, preco: p = 1000, desconto = 100} = produto 
+console.log(d, p, desconto)
+Notebook 1800 100
+
+--------------------------- EXTRAIR ATRIBUTO DE ATRIBUTO DO OBJETO
+
+let {detalhes: {fabricante, modelo}} = produto
+console.log(fabricante, modelo)
+
+let {detalhes: {fabricante: f, modelo = 'Não informado'}} = produto
+console.log(f, modelo)
+//abc Não informado
+
+
+</script>
+
+<body>
+
+
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript</title>
+
+	<script>
+		
+		var num1=prompt('Informe o primeiro número')
+		var operacao=prompt('Digite a operacao: soma ou subtracao')
+		var num2=prompt('Informe o segundo número')
+
+
+
+
+		function calculo(n1,n2,operacao)
+		{
+			n1=parseFloat(n1)
+			n2=parseFloat(n2)
+			switch(operacao){
+				case 'soma':
+				return(n1+n2)
+				break
+				case 'subtracao':
+				return(n1-n2)
+				break
+			}
+		}
+
+		var resultado=calculo(num1, num2,operacao)
+
+		
+		// document.write('O resultado é '+ resultado)
+
+		//Outra forma:
+		document.write('O resultado é '+ calculo(num1, num2,operacao))
+	
+
+	</script>
+
+</head>
+<body>
+
+
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+	</script>
+
+</body>
+</html>

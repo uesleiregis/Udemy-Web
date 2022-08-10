@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Atividade para Fixação do Conteúdo Aula 172</title>
+
+	<script>
+	
+
+
+	// sobre a flexibilidade de funções
+	/*function soma(a,b){
+		b = b===undefined ? 0:b
+			// a = a===undefined ? 0:a
+		return a+b
+	}
+	console.log(soma(7,7))
+	console.log(soma(7,7,9,15)) // desconsidera os parâmetros acidionais
+	console.log(soma(7))
+	console.log(soma())*/
+
+
+		//arguments: instrução que existe para todas as funções Javascript que RETORNA algo parecido com Array contendo RELAÇÃO DE PARÂMETROS PASSADOS PARA A FUNÇÃO. 
+		// Representa um objeto que é uma variável local disponível dentro da função. da
+		// Em qq função, podemos recuperar os parâmetros encaminhados para a respectiva função atravez desse objeto que é uma variável local do escopo da função.
+
+		//Não se trata de um array, portanto não podemos usar o método pop(), por exemplo;
+		//Mas podemos converter o objeto em um array.
+		//Importante: podemos trabalhar com parâmetros variáveis dentro de fuções Javascript utilizando o objeto arguments;
+
+
+
+
+	function soma(){
+		//console.log(arguments) // ver sobre arguments acima
+		
+		var resultado = 0
+		for (var i in arguments){
+
+			resultado += arguments[i]
+		}
+
+		 return resultado
+	}
+
+	console.log(soma(7,5,3.2, 0.8, 'Texto'))
+	
+	// O objeto arguments e a tecnica de objetos variáveis é algo bastante difundido na versão ecma script 2009.
+	// No ES6, que será estudado mais adiante, existe outra técnica chamada Spread rest. 
+
+	//É um recurso interessante que ainda é difundido para lidar com parâmetros variáveis.
+
+
+// TESTANDO POR MIM MESMO
+
+	function x(){
+		var resultado=[]
+
+		for(var i in arguments)
+		{
+			resultado[i] = arguments[i]
+		}
+
+		return resultado
+	}
+
+
+	var y=x(1,3,5,7)
+	console.log(y)
+
+
+	document.write(y)
+
+	</script>
+
+</head>
+<body>
+
+ 
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+
+</body>
+</html>

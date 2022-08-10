@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+<script type="text/babel">
+
+ let Bicicleta1 = {
+ 	cor: 'Branca',
+ 	marcha: 'Única',
+ 	aro: 12,
+ 	pedalar(){ console.log('Método pedalar executado')}
+ }
+
+ console.log(Bicicleta1)
+
+//-----------------------------------
+
+  let Bicicleta2 = {
+ 	cor: 'Vermelha',
+ 	marcha: '18',
+ 	aro: 26,
+ 	pedalar(){ console.log('Método pedalar executado')}
+
+ }
+
+ console.log(Bicicleta2)
+
+ console.log(Bicicleta1)
+
+ // --------------------------------- ------
+
+ // Requisição http
+ // Resposta http
+ 
+ // ------------------- -----
+
+ let BicicletaFactory = function(cor, marcha, aro, tipoPedal='Simples'){
+ // lógica
+ // Requisição http
+ // Resposta http
+ 	return{
+ 		cor,
+ 		marcha,
+ 		aro,
+ 		tipoPedal,
+ 		pedalar(){	console.log('Método pedalar executado')	}
+ 	}
+ }
+
+ let Bicicleta3 = BicicletaFactory('vermelha', '18', 26)
+ let Bicicleta4 = BicicletaFactory('Azul', '16', 29)
+console.log(Bicicleta3)
+console.log(Bicicleta4)
+
+console.log(`Cor: ${Bicicleta3.cor}`)
+Bicicleta3.pedalar()
+
+
+let Bananoes = function(a, b,c){
+	let a1 = `${a} é um banana dos piores. `
+	let b1 = `${b} é bastante esperto. `
+	let c1 = `${c}, afinal é mais esperto que os dois.`
+
+	return{
+		x1: a1,
+		x2: b1,
+		x3: c1,
+		imprimir(){
+			console.log(a1+b1+c1)
+		}
+	}
+
+}
+
+let bananas = Bananoes('João', 'Carlos', 'Tiago')
+console.log(bananas)
+bananas.imprimir()
+
+//------------------------
+
+let b1 = Bananoes('Pedro', 'Tiago', 'João')
+b1.imprimir()
+
+
+
+
+
+
+</script>
+
+<body>
+
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>

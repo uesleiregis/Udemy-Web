@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+<!-- Aula 267 Spread/Rest -->
+<script type="text/babel">
+
+//Contexto rest
+
+// function soma(...param){
+// 	let resultado = 0
+// 	console.log(param)
+// 	param.forEach(v => resultado += v)
+
+// 	return resultado
+// }
+// console.log(soma(3, 8, 5, 7))
+
+
+
+
+
+// function multiplicador(m, ...p){
+// 	let resultado=0;
+
+// 	p.forEach( v => resultado = resultado += v * m)
+// 	console.log(p)
+// 	return resultado
+// }
+
+
+// console.log(multiplicador(5, 12, 3, 49))
+
+//-----
+
+// Contexto rest --> juntamos os dados
+
+// quero 
+// - passar quantos parâmetros eu quiser para a função
+// - atuar em cada um de forma dinâmica
+
+// ...param vai juntar todos os parâmetros de uma vez só em uma estrutura de array 
+// na prática ...param está equivalendo a [3,8,5,7]
+// podemos atuar sobre cada um dos indices do Array de forma dinâmica
+
+function soma(...param){
+	let resultado = 0
+
+	console.log(param) //[3, 8, 5, 7]
+
+	param.forEach(v => resultado += v)
+
+	return resultado
+}
+
+console.log(soma(3,8,5,7))
+
+
+// Se eu quiser, posso agora inserir quantos parâmetos eu quiser e a soma vai ocorrer normalmente
+// function soma(...param){
+// 	let resultado = 0
+
+// 	console.log(param) //[3, 8, 5, 7]
+
+// 	param.forEach(v => resultado += v)
+
+// 	return resultado
+// }
+
+// console.log(soma(3,8,5,7, -8, 10, 115))
+
+
+//-----------------------------
+
+// a primeira entrada (5) vai ser recebida pelo m e os outros irão para ...p e serão recebidos como um único parâmetro que será um Array devido o Spread
+
+//!! deixar os parâmetros indefinidos por último para usar como operador spread.
+
+function multiplicacao(m, ...p){
+	console.log(m)
+	let resultado = 0
+
+	console.log(p)
+
+	p.forEach( v => resultado = resultado + v * m)
+
+	return resultado
+}
+
+let x = multiplicacao(5, 7, 12, 3, 49)
+
+console.log(x) 
+
+// Outra forma:
+//console.log( multiplicacao(5, 7, 12, 3, 49)) 
+
+</script>
+
+<body>
+
+
+
+
+</body>
+
+</html><script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>

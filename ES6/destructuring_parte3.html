@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+<script type="text/babel">
+
+// let arr = [10, 20, 30, 40]
+
+// function teste(a, b){
+// 	console.log(a,b)
+// }
+
+// teste(arr[0], arr[1])
+// saída: 10 20
+
+// -------------------------
+// -- na desestruturação
+
+// let arr = [10, 20, 30, 40]
+
+// function teste([a, b]){ // só estou pegando os primeiros valores
+// 	console.log(a,b)
+// }
+
+// teste(arr)
+// saída: 10 20
+
+// ---- pulando valores
+// let arr = [10, 20, 30, 40]
+
+// function teste([a, b, ,c]){ // pulando o terceiro índice
+// 	console.log(a,b,c)
+// }
+
+// teste(arr)
+// // saída: 10 20 40
+
+// // ----- parametros default
+// let arr = [10, 20, 30, 40]
+
+// function teste([a, b, ,c, d=100]){ // não tem o 5º elemento no Array, retornando default. Esse valor assume default.
+// 	console.log(a,b,c,d)
+// }
+
+// teste(arr)
+// // saída: 10 20 40 100
+
+//-------------------- OBJETOS +++++++++++++++++++++++++++
+
+
+// //------ Forma simples de fazer , acessando o atributo diretamente
+
+// let obj = {
+// 	a: 10,
+// 	b: 20,
+// 	c: 30,
+// 	d: 40
+// }
+
+// function teste(a,b){
+// 	console.log(a,b)
+
+// }
+
+// teste(obj.a,obj.b)
+
+// // 10 20
+
+// //----- Utilizando destructuring
+
+
+// let obj = {
+// 	a: 10,
+// 	b: 20,
+// 	c: 30,
+// 	d: 40
+// }
+
+// function teste({a,c}){ // extraindo os atributos
+// 	console.log(a,c)
+
+// }
+
+// teste(obj)
+
+// // 10 30
+
+// //----- Atribuindo alias aos atributos
+
+// let obj = {
+// 	a: 10,
+// 	b: 20,
+// 	c: 30,
+// 	d: 40
+// }
+
+// function teste({a:x,d}){ // extraindo os atributos
+// 	console.log(x,d)
+
+// }
+
+// teste(obj)
+
+// // 10 40
+
+// //----- Valores Default
+
+// let obj = {
+// 	a: 10,
+// 	b: 20,
+// 	c: 30,
+// 	d: 40
+// }
+
+// function teste({a:x,d, z=100}){ // extraindo os atributos
+// 	console.log(x,d,z)
+
+// }
+
+// teste(obj)
+
+// // 10 20 100
+
+
+
+
+</script>
+
+<body>
+
+
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>

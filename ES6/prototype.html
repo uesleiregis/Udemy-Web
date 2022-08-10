@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+<script type="text/babel">
+
+ // aviao
+ // 	atributos cor e modelo; Método levantar voo
+
+
+// // Objeto literal
+
+// let a1 = {
+// 	cor:'Branco',
+// 	modelo: 'Airbus a380',
+// 	levantarVoo: function() { console.log('Levantar Voo')}
+// }
+
+// // Função construtora
+
+// let AviaoF = function(){
+// 	this.cor = 'Azul'
+// 	this.modelo = 'Boeing 787'
+// 	this.levantarVoo = function (){ Console.log('Levartar Voo')}
+// }
+
+// let a2 = new AviaoF()
+
+// // ------
+
+// class AviaoC{
+// 	constructor(){
+// 		this.cor ='Vermelho'
+// 		this.modelo ='Embraer E-Jets'
+// 	}
+// 	levantarVoo(){
+// 		console.log('Levantar Voo')
+// 	}
+// }
+
+// let a3 = new AviaoC()
+
+// console.log(a1)dddddd
+// console.log(a2)
+// console.log(a3)
+
+
+/// =================================================================
+
+// OBJETO LITERAL
+let a1 = {
+	cor: 'Branco',
+	modelo: 'Airbus a380',
+	levantarVoo: function(){
+		console.log('Levantar Voo')
+	}
+}
+
+
+// FUNÇÃO CONSTRUTORA
+
+let AviaoF = function (){
+	this.cor = 'Azul',
+	this.modelo = 'Boeing 787',
+	this.levantarVoo = function(){
+		console.log('Levantar VooVoo')
+	}
+}
+
+let a2 = new AviaoF()
+
+
+//CLASSE
+class AviaoC{
+	constructor(){
+		this.cor ='Vermelho' 
+		this.modelo = 'Embraer E-Jets'
+	}
+
+	levantarVoo(){
+		console.log('Levantar Voo')
+	}
+}
+
+
+let a3 = new AviaoC()
+
+
+console.log(a1)
+console.log(a2)
+console.log(a3)
+
+</script>
+
+<body>
+
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>

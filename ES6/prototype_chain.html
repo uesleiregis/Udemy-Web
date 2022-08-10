@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+<script type="text/babel">
+
+// Object.prototype
+Object.prototype.attr50 = 'Z' // cuidado; estamos usando um objeto global, o objeto attr50 estará disponível em toda aplicação.
+
+ let animal = { attr1: 'a' }
+ let vertebrado = {__proto__: animal,  attr2: 'b' } // vertebrado herdando de animal
+ let ave = {__proto__:vertebrado, attr3: 'c', attr2:'x' } // herdando atributos do objeto vertebrado ; sombreamento
+
+
+
+ console.log(ave.attr3, ave.attr2, ave.attr1, ave.attr50) 
+console.log(vertebrado.attr2, ave.attr2)
+
+
+
+</script>
+
+<body>
+
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>

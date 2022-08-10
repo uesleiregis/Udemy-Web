@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Atividade para Fixação do Conteúdo Aula 172</title>
+
+	<script>
+		
+	
+		nome=prompt('Informe o seu nome ')
+		// var nome='Fulano'
+		var altura=prompt('Informe a altura em centímetros ')
+		var peso=prompt('Informe o peso ')
+
+		altura=parseFloat(altura)
+		peso=parseFloat(peso)
+
+		altura/=100 // mesmo que altura=altura/100
+
+		var m=peso/(altura*altura) // calculo do IMC
+
+		if(m<16)
+		{
+			classificacao='Baixo peso muito grave'
+		}
+		else if(m>=16 && m<=16.99)
+		{
+			classificacao='Baixo peso grave'
+		}
+		else if(m>=17 && m<= 18.49)
+		{
+			classificacao='Baixo peso'
+		}
+		else if(m>=18.50 && m<=24.99 )
+		{
+			classificacao='Peso normal'
+		}
+		else if(m>= 25 && m<= 29.99)
+		{
+			classificacao='Sobrepeso'
+		}
+		else if(m>= 30 && m<= 34.99)
+		{
+			classificacao='Obesidade grau I'
+		}
+		else if(m>= 35 && m<= 39.99 )
+		{
+			classificacao='Obesidade grau II'
+		}
+		else if(m>=40){
+			classificacao='Obesidade grau III'
+		}
+
+		document.write(nome + ' possui índice de massa corporal igual a ' + m + ', sendo classificado como '+ classificacao + ' .')
+
+		console.log(altura)
+		console.log(peso)
+		//Irismar - Altura: 157cm Peso: 49kg IMC 19.87 Peso Normal - 45.6 a 61.37kg
+		//Uéslei - Peso: 79 Altura:177 IMG: 25.22 - Sobrepeso  - entre 58 e 78kg
+		//Fernanda - Peso: 57 Altura:167 IMC: 20.43 - entre 51.6 e 69.4kg
+
+		
+
+		// var altura = prompt('Informe a altura em centímetros')
+
+		// altura=parseFloat(altura)
+		// altura/=100
+
+		var imc1 = 18.50
+
+		var imc2 = 24.9
+		var pesoideal1=imc1*altura*altura
+		var pesoideal2=imc2*altura*altura
+
+		document.write('Seu peso precisa estar entre '+ pesoideal1+ ' e '+ pesoideal2)
+
+		console.log(altura)
+		console.log(imc1)
+		console.log(imc2)
+
+
+	</script>
+
+</head>
+<body>
+
+ 
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+
+</body>
+</html>

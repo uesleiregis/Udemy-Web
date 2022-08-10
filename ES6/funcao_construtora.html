@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+<script type="text/babel">
+// //AULA 261 - Funções Construtoras
+
+// // Tá dando ERRRO NÃO SEI QUAL É O PROBLEMA
+// let Carro = function(){
+// 	this.cor = 'Amarelo'
+// 	this.modelo = 'Chevette'
+// 	this.velocidadeAtual = 0
+// 	this.velocidadeMaxima = 180
+
+// 	this.acelerar = function(){
+// 		let velocidade = this.getVelocidadeAtual()+10
+// 		this.setVelocidadeAtual(velocidade)
+
+
+// 	}
+
+// 	this.getVelocidadeAtual = function (){
+// 		return this.velocidadeAtual
+// 	}
+
+// 	this.setVelocidadeAtual = function (velocidadeAtual){
+// 		this.velocidadeAtual = velocidadeAtual
+// 	}
+// }
+
+// let carro = new Carro()
+
+// carro.acelerar()
+
+// console.log(`A velocidade atual é: ${carro.getVelocidadeAtual()} `)
+
+
+// ------------------- REVENDO A AULA -------------------
+let Carro = function(){
+	this.cor = 'amarelo'
+	this.modelo = 'corsa'
+	this.velocidadeAtual = 0
+	this.velocidadeMaxima = 180
+
+	this.acelerar = function(){
+		// this.velocidadeAtual += 10
+		let velocidade = this.getVelocidadeAtual() + 10
+		this.setVelocidadeAtual(velocidade)
+
+	}
+	this.getVelocidadeAtual = function(){
+		return this.velocidadeAtual
+	}
+	this.setVelocidadeAtual = function(velocidadeAtual){
+		this.velocidadeAtual = velocidadeAtual
+	}
+}
+
+let carro = new Carro()
+
+console.log(`A velocidade atual é ${carro.getVelocidadeAtual()} Km/h`)
+
+
+
+let x = function(){
+	var velocidadeMaxima 
+	var quilometrosRodados
+	this.cor
+	this.modelo
+	this.acelerar = function(){}
+	this.getVelocidadeAtual = function(){}
+	this.setVelocidadeAtual = function(){}
+	var setQuilometrosRodados = function(){}
+}
+
+
+</script>
+
+<body>
+
+
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>

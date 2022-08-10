@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bom Screen</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<script src="jogo.js"></script>
+
+
+</head>
+<body onresize="ajustaTamanhoPalcoJogo()">
+
+	<div class="painel">
+		<div class="vidas">
+			<img id="v1" src="imagens/coracao_cheio.png" alt="">
+			<img id="v2" src="imagens/coracao_cheio.png" alt="">
+			<img id="v3" src="imagens/coracao_cheio.png" alt="">
+		</div>
+		<div class="cronometro">		Tempo restante: <span id="cronometro"></span>
+		</div>
+	</div>
+
+
+	<script >
+
+		document.getElementById('cronometro').innerHTML = tempo
+
+		// posicaoRandomica()
+
+		f = function(){
+			posicaoRandomica()
+		}
+
+		var criaMosca = setInterval(f, criaMosquitoTempo)
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+
+</body>
+</html>

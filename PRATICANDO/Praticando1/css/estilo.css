@@ -1,0 +1,22 @@
+.custom-logo{
+	height: 80px;
+}
+
+
+.btn-group-lg>.btn, .btn-lg {
+font-size: 1.1rem;
+
+}
+
+div.container div.row a p.assunto:hover{
+	font-weight: 900px;
+	text-transform: uppercase;
+}
+div.container div.row a p.assunto:link{
+	font-weight: 900px;
+	text-transform: uppercase;
+}
+div.container div.row a p.assunto:visited{
+	font-weight: 900px;
+	text-transform: uppercase;
+}

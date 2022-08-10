@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Arrays Multidimensionais </title>
+	<!-- Muito tilizado para recuperar informações de formulários -->
+
+	<script>
+
+		var lista_coisas = Array()
+
+		lista_coisas['frutas']=Array()
+		lista_coisas['frutas'][1]= 'banana'
+		lista_coisas['frutas'][2]= 'maçã'
+		lista_coisas['frutas'][3]= 'morango'
+		lista_coisas['frutas'][4]= 'uvas'
+
+		lista_coisas['pessoas'] = []
+		lista_coisas['pessoas']['a'] = 'João'
+		lista_coisas['pessoas']['b'] = 'José'
+		lista_coisas['pessoas']['c'] = 'Maria'
+
+
+
+		// console.log(lista_coisas)
+	
+		document.write(lista_coisas['frutas'][2])
+		document.write(lista_coisas['pessoas']['b'])
+
+		//Posso declarar quantas dimensões eu quiser/precisar.
+		
+	</script>
+
+</head>
+<body>
+
+
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+
+</body>
+</html>

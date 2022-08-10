@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+<script type="text/babel">
+
+// O que se faz com frequência: 
+// let frutas = ['Abacaxi', 'Uva', 'Pera', 'Mamão']
+
+// let a = frutas[0] // Acesso 1 a 1 --> improdutivo
+// let b = frutas[1]
+// let c = frutas[2]
+
+// console.log(a+b+c) // uso das variáveis no código
+// console.log(a, b, c)
+
+// Destructuring
+
+let frutas = ['Abacaxi', 'Uva', 'Pera', 'Mamão']
+
+// let [a, b, , c] = frutas // Pular um índice
+
+// console.log(a, b, c)
+
+let [a, b = 'Abacate', c, d, e = 'Banana'] = frutas
+
+console.log(a, b, c, d, e)
+// Arrays multidimensionais
+
+let coisas = [['Abacaxi', 'Uva', 'Pera', 'Mamão'], ['José', 'Maria']]
+let [,[,n2]] = coisas
+console.log(n2)
+
+// Exercício: Extrair o valor de Pera
+let [[, ,n1,],] = coisas
+console.log(n1)
+
+</script>
+
+<body>
+
+
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>

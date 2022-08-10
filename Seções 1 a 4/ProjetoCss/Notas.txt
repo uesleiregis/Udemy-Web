@@ -1,0 +1,33 @@
+border-style
+
+dotted
+dashed
+solid
+double
+groove
+ridge
+inset
+coutset
+none
+hidden
+
+
+cores padrão:
+cores html online (google)
+https://html-color-codes.info/Codigos-de-Cores-HTML/
+
+
+--
+/*
+			https://www.w3schools.com/cssref/pr_font_font.asp
+
+			font: font-style font-variant font-weight font-size/line-height font-family|caption|icon|menu|message-box|small-caption|status-bar|initial|inherit;
+			*/
+
+
+body{
+			background-image: url('imagens/yoshi.png');
+		}
+
+		background-attachment:scroll; // rola a imagem junto com a barra de rolagem // fixed
+		background-position ... center

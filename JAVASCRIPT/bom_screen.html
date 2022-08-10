@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bom Screen</title>
+
+	<script>
+		//js >> browser/bom >> screen > ver propriedades
+		//availHeight (altura total sem a barra de ferramentas), availWidth (largura total sem a barra de ferramentas), colorDepth, height(altura total), pixelDepth, width (largura total)
+
+		// IMPORTANTE!!!  São valores potenciais, o quanto o browser pode expandir, não a altura e largura que ele está ocupando naquele momento
+
+		// Fonte: https://www.w3schools.com/jsref/obj_screen.asp
+
+
+		var altura = window.screen.availHeight // altura total excluindo a barra de ferramentas do navegador
+		var largura = window.screen.availWidth // largura do navegador exluindo 
+
+		// document.write('Altura do navegador é: ' + altura + '<br>')
+		// document.write('Largura do navegador é: ' + largura + '<br>')
+
+		if(largura < 500){
+			document.write('Lógica para impressão do menu versão mobile')
+		} else{
+			document.write('Lógica para impressão do menu versão web')
+		}
+
+	</script>
+
+</head>
+<body>
+
+
+ 
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+
+</body>
+</html>

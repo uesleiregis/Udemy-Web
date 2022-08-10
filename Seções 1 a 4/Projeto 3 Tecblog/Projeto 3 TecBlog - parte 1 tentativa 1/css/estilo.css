@@ -1,0 +1,83 @@
+/*Limpar formatações padrão*/
+
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-size: 1em;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background: #e6e6e6
+}
+
+/*
+************ Layout ************
+*/
+
+#area-cabecalho{
+	background-color: red;
+	padding-bottom: 15px;
+	text-align: center;
+}
+
+#area-logo, #area-menu{
+	padding: 15px;
+
+}
+
+
+/*
+************ Formatações Gerais ************
+*/
+
+h1{
+	font-size: 2.5em;
+
+a{
+	text-decoration: none;
+	padding: 10px;
+}
+
+
+a:link, a:visited{
+	color: white;
+	background: red;
+}
+
+a:hover, a:active{
+	color: red;
+	background: white;
+}
+
+
+.branco{
+	 color: white;
+}
+#area-principal{
+	width: 920px;
+	background: gray;
+	margin: 20px;
+}
+#area-postagem{
+	width: 660px;
+	float: left;
+	border: 1px solid;
+	margin-right: 20px;
+
+}
+#barra-lateral{
+	width: 240px;
+	float: right;
+	margin: 20px;
+	background: white;
+	z-index: 1;
+}
+#rodape{
+	border: 1px red;
+	display: block;
+	float: botton;
+	z-index: 0;
+}
+h2{
+	color: red;
+}

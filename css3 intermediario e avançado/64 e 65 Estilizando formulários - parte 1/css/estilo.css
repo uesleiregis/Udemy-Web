@@ -1,0 +1,41 @@
+body{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+fieldset{
+	padding: 1em;
+	border: 1px solid #ccc;
+	background-color: #f8f8f8;
+	margin: 1em 0;
+}
+legend{
+	font-weight: bold;
+}
+label{
+	display: block;
+	cursor: pointer;
+}
+input{
+	width: 20em;
+}
+
+
+/*Seletor de atributo, util para type="radio", type="text", etc. Não funciona em navegadores antigos*/
+/*
+input[type="radio"]{
+	width: 3em;
+}
+*/
+
+/*Formatação acima usando classes*/
+input.radio, input.checkbox, input.submit{
+	width: auto;
+}
+
+.radio{
+	margin-right: 1em;
+}
+
+textarea{
+	width: 20em;
+	height: 10em;
+}

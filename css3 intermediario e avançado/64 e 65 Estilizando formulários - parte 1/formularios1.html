@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Estilizando formulários</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+<body>
+	<h2> Estilizando Formulários </h2>
+	<form> <!-- Poderia colocar o form dentro de uma div e ajusta o tamanho da div para o tamanho que eu quisesse. As caixas de texto eu poderia utilizar porcentagem e usar esse tamanho da div como referência -->
+		<fieldset><!--Agrupa dados Semelhantes-->
+
+			<legend> Detalhes de contato</legend>
+
+			<div>
+				<label for="nome">Nome:</label> <!-- Etiqueta/rótulo - identifica caixas de texto-->
+				<input type="text" name="nome2" id="nome"> <!-- o mais importante é o id, posso mudar o atributo nome à vontade como o fiz intitulando como nome2 -->
+			</div>
+
+			<!-- Segunda forma - remove o for e inclui tudo num label-->
+				<!--
+				<label> Nome:
+				<input type="text" name="nome" id="nome">
+				</label> -->
+
+			<div>
+				<label for="url">URL:</label>
+				<input type="text" name="url" id="url">
+			</div>
+
+			<div>
+				<label for="email">Email:</label>
+				<input type="text" name="email" id="email">
+			</div>
+
+		</fieldset> 
+
+		<fieldset>
+			<legend>Comendários</legend>
+			<div>
+				<label for="mensagem">Mensagem:</label>
+				<textarea name="mensagem" id="mensagem"></textarea>
+			</div>
+		</fieldset>
+
+		<fieldset>
+			<legend>Lembrar de mim</legend>
+			<div >
+				<label>
+					<input class="radio" type="radio" name="lembrar" id="sim">Sim
+				</label>
+				<label>
+					<input class="radio" type="radio" name="lembrar" id="nao">Não
+				</label>
+			</div>
+		</fieldset>
+	</form>
+</body>
+</html>

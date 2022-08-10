@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+<script type="text/babel">
+//AULA 252
+class Tv{
+	constructor(){
+		this._relacaoCanais = Array(2,4,5,7,10)
+		this.canalAtivo = 5
+	}
+	get canalAtivo(){
+		return this._canalAtivo
+	}
+	set canalAtivo(canal){
+		if(this._relacaoCanais !== -1){
+			this._canalAtivo = canal
+		}
+	}
+}
+
+let tv = new Tv()
+
+Tv.canalAtivo = 13 // é uma pseudovariável
+// console.log(Tv.canalAtivo(7))  // ASSIM NÃO FUNCIONA, PORQUE Canal ativo é uma pseudovariável;
+
+console.log(Tv.canalAtivo) // FORMA CORRETA
+
+
+</script>
+
+<body>
+
+
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>

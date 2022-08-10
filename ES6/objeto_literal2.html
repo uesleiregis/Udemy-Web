@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+<script type="text/babel">
+//AULA 256 - OBJETO LITERAL
+
+
+// Notação de Classe ES6
+
+class Produto{
+	constructor(descricao, preco){
+		this.descricao = descricao
+		this.preco = preco
+	}
+
+	verDescricao(){
+		console.log(`Descricao: ${this.descricao} Preço: ${this.preco}`)
+	}
+}
+
+let produto = new Produto('Televisão', '500,00')
+
+produto.verDescricao()
+ 
+// Notação de Objeto literal/Estático
+
+
+produtoLiteral = {
+
+	descricao: 'Notebook',
+	preco: 3000,
+	verDescricao: function (){
+		console.log(`${this.descricao} por apenas ${this.preco}`)
+	}
+};
+
+produtoLiteral.verDescricao()
+
+
+
+
+
+
+
+// let produtoLiteral = {
+// 	descricao: 'Geladeira',
+// 	preco: 1800,
+// 	verDescricao: function() {
+// 		console.log(`${this.descricao} por apenas ${this.preco}`)
+// 	}
+// }
+
+// produtoLiteral.verDescricao()
+
+</script>
+
+<body>
+
+
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+<script type="text/babel">
+//AULA 258 - OBJETO LITERAL - MODIFICANDO VALORES
+
+let pessoa ={
+	nome: 'José',
+	idade: 45
+}
+
+console.log(pessoa.nome)
+
+pessoa.nome = 'Fernanda'
+pessoa.idade = 32
+
+console.log(pessoa.nome)
+console.log(pessoa.idade)
+
+
+
+// revendo a aula
+
+let pessoa2 = {
+	nome: 'Jose',
+	idade: 67
+}
+
+console.log(pessoa2.nome)
+pessoa2.nome = 'Maria'
+pessoa2.idade = 35 // Ou window.pessoa2.idade = 35
+
+console.log(pessoa2.nome)
+console.log(pessoa2.idade)
+</script>
+
+<body>
+
+
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>

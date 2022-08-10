@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript</title>
+
+	<script>
+		var data= new Date()
+		// document.write(data.getDate()+' / '+ data.getMonth()+1+' / '+data.getFullYear())
+
+		//  ---->  Adicionar / Remover DIAS
+
+		//Meu jeito
+		// dia=data.getDate()+1 // recebe o dia atual e soma +1
+		// document.write(dia)
+
+		//Jeito do professor
+		// document.write(data.toString())
+		// data.setDate(data.getDate()+1)
+		// document.write( '<hr>')
+		// document.write(data.toString())
+		// document.write('<br><br><hr><hr> ')
+		
+		// //  ---->  Adicionar / Remover MESES
+		// document.write(data.toString())
+		// data.setMonth(data.getMonth()+1)
+		// document.write( '<hr>')
+		// document.write(data.toString())
+		// document.write('<br><br><hr><hr> ')
+
+		// //  ---->  Adicionar / Remover ANOS
+		// document.write(data.toString())
+		// data.setFullYear(data.getFullYear()+1)
+		// document.write( '<hr>')
+		// document.write(data.toString())
+		// document.write('<br><br><hr><hr> ')
+		//---------------------
+
+
+		// Quantos dias entre as duas datas
+		//15/01/2017
+		var data1 = new Date(2017,0,15)// crio um objeto com a seguinte data.data , os meses são de 0 a 11
+
+
+		document.write('<br>')
+		//23/02/2017
+		var data2 = new Date(2017, 1,23)
+
+		document.write(data1.toString())
+		document.write('<hr>')
+		document.write(data2.toString())
+
+
+		document.write('<br><br> <hr>')
+
+		// // Converter nossas datas para valor que posssa ser calculado
+
+		document.write(data1.getTime()) // pega os milisegundos desde 1 de janeiro de 1970
+		document.write('<hr>')
+		document.write(data2.getTime())
+
+		// //1 de janeiro de 1970 - paradigma, data de referencia para getTime
+
+
+		//encontrar a qtde de milissegundos entre data1 e data2
+		document.write('<br><b></b>')
+		var milissegundos_entre_datas = Math.abs(data1.getTime()-data2.getTime())
+		
+		 // 1 dia tem 24h, cada hora: 60min , cada min: 60s, cada s: 1000milisegundos
+		 //quantos milisegundos temos em um dia
+
+		 var milissegundos_por_dia =  (1*24*60*60*1000)
+		 document.write('<br> Um dia tem: ' + milissegundos_por_dia + 'milisegundos <br>')
+		
+		 document.write('<br><b></b>')
+		 document.write('A diferença enter data1 e data2 e de: '+Math.ceil(milissegundos_entre_datas/milissegundos_por_dia)+' dias')
+		
+	
+
+	</script>
+
+</head>
+<body>
+
+
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+	</script>
+
+</body>
+</html>

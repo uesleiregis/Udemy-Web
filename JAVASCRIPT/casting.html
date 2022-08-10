@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Casting de Tipos com toString(), parseInt()</title>
+
+	
+
+	<script>
+
+		//toString() parseInt() e parseFloat()
+
+		var variavel1 = prompt("Digite algum número: ")
+		var variavel2 = prompt("Digite algum número: ")
+
+		variavel1=parseInt(variavel1) // pega o valor da string e transforma em inteiro, depois substitui o valor atual de 'variavel1'
+		variavel2=parseFloat(variavel2)
+		
+		// document.write(variavel1 + variavel2)
+		// retornou a soma dos dois valores, um inteiro (truncado) + o float , retornou um float.um
+
+		document.write(variavel1.toString()+variavel2.toString()) // Concatenação do valor textual do número
+
+		
+	</script>
+
+</head>
+<body>
+
+ 
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tecblog - O seu site de tecnologia</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+<body>
+	<div id="area-cabecalho">
+		<div id="area-logo">
+			<h1>
+				Tec<span class="white">Blog</span>
+			</h1>
+			
+		</div>
+
+		<div id="area-menu">
+			<a href="index.html">Home</a>	
+			<a href="jogos.html">Jogos</a>	
+			<a href="celulares.html">Celulares</a>	
+			<a href="informatica.html">Informática</a>	
+			<a href="eletronicos.html">Eletrônica</a>
+		</div>
+	</div>
+
+	<div id="area-principal">
+		<div id="area-postagem">
+			<h2>Titulo da postagem 1</h2>
+			<p>postado em 20 de março 2022</p>
+			<img src="imagens/imagem1.jpg">
+		</div>
+		<div id="barra-lateral">
+			barra lateral
+		</div>
+		<div id="rodape">
+			<h4>Todos os direitos reservados</h4>
+		</div>
+	</div>
+</body>
+</html>

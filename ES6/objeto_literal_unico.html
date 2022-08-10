@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+<script type="text/babel">
+//AULA 260 - OBJETO LITERAL - CRIAÇÃO DINAMICA DE PARES NOME VALOR
+
+let assinatura = {
+		idCliente: 1000,
+		descricaoServico: 'Acesso a internet',
+		status (){
+			console.log('Ativo')
+		}
+	}
+
+	console.log(assinatura)
+
+	let x = assinatura
+	let y = assinatura
+
+	x.comida = 'Torrada'
+	x.idCliente = 1500
+	console.log(assinatura)
+	// console.log(x)
+	console.log(y)
+
+	y.descricao = 'Internet + TV + telefone'
+
+	// é como se x fosse o próprio iobjeto assinatura.
+
+	let z = y
+	z.idCliente = 300
+	console.log(assinatura.idCliente)
+
+
+
+
+</script>
+
+<body>
+
+
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sombra</title>
+	<meta charset="utf-8">
+
+	<!-- Normalize CSS -->
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+</head>
+	<body>
+		<div id="caixa">
+			<h1>Lorem Ipsum</h1>
+			<p>
+				Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. 
+			</p>
+		</div>
+		<div id="caixa">
+			<h1>Lorem Ipsum</h1>
+			<p>
+				Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. 
+			</p>
+		</div>
+		<div id="caixa">
+			<h1>Lorem Ipsum</h1>
+			<p>
+				Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. R
+		</div>
+		<div id="caixa">
+			<h1>Lorem Ipsum</h1>
+			<p>
+				Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Ri
+		</div>
+	</body>
+</html>
+
+
+<body>
+	<div id="caixa">
+		<h1>Lorem Ipsum</h1>
+		<p>
+			Contrary to popular belief, Lnas roots in a piece of classical Latin literature from 45 BC, maki        ng it over 2000 years old. 
+		</p>
+	</div>
+	<div id="caixa">
+		<h1>Lorem Ipsum</h1>
+		<p>
+			Contrary to popular belief, Lnas roots in a piece of classical Latin literature from 45 BC, maki        ng it over 2000 years old. 
+		</p>
+	</div>
+	<div id="caixa">
+		<h1>Lorem Ipsum</h1>
+		<p>
+			Contrary to popular belief, Lnas roots in a piece of classical Latin literature from 45 BC, maki        ng it over 2000 years old. 
+		</p>
+	</div>
+</body>

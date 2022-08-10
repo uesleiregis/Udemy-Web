@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+<script type="text/babel">
+//AULA 253 - PILAR DA HERANÇA
+
+// class Animal{
+// 	constructor(){
+// 		this.cor=''
+// 		this.tamanho = null
+// 		this.peso = null
+// 	}
+
+// 	dormir(){
+// 		console.log('Dormiu')
+// 	}
+// }
+
+// class Cachorro extends Animal{
+// 	constructor(){
+// 		super()
+// 		this.orelhas=''
+// 	}
+
+// 	rosnar(){
+// 		console.log('rosnando')
+// 	}
+// 	correr(){
+// 		console.log('correndo')
+// 	}
+// }
+
+// class Passaro extends Animal{
+// 	constructor (){
+// 		super()
+// 		this.bico=''
+// 	}
+// 	voar(){
+// 		console.log('Voando')
+// 	}
+// }
+// class Papagaio extends Passaro{
+// 	constructor(){
+// 		super()
+// 		this.sabeFalar = true
+// 	}
+// 	falar(){
+// 		console.log('Falar')
+// 	}
+// }
+
+
+// let cachorro = new Cachorro()
+// let passaro = new Passaro()
+// let papagaio = new Papagaio()
+
+// // cachorro.dormir()
+// // passaro.dormir()
+// // papagaio.falar()
+// // papagaio.dormir()
+// // papagaio.voar()
+
+// console.log(cachorro)
+// console.log(passaro)
+// console.log(papagaio)
+
+
+//---------- REVENDO A AULA : pilar da HERANÇA  -------- ------------------------
+
+
+// OBJETO CACHORRO
+// Atributos: Cor, tamanho, orelhas
+// Métodos: correr, dormir, rosnar
+
+// OBJETO PÁSSARO
+// Atributos: cor, tamanho, bico;
+// Métodos: voar, dormir
+
+class Animal{
+	constructor(){
+		this.cor = 'azul'
+		this.tamanho = 'grande'
+	}
+
+	dormir(){
+		console.log('dormiu')
+	}
+}
+
+class Cachorro extends Animal{
+	constructor(){
+		super()
+		this.orelhas = 'pontudas'
+	}
+
+	correr(){
+		console.log('Correu')
+	}
+
+	rosnar(){
+		console.log('Rosnou')
+	}
+}
+
+class Passaro extends Animal{
+	constructor(){
+		super()
+		this.pico = 'fino'
+	}
+
+	voar(){
+		console.log('voou')
+	}
+}
+
+class Papagaio extends Passaro{
+	constructor(){
+		super()
+		this.sabeFalar = true	
+	}
+	falar(){
+		console.log('falou')
+	}
+
+}
+
+let cachorro = new Cachorro()
+let passaro = new Passaro()
+let papagaio = new Papagaio()
+
+cachorro.dormir()
+passaro.dormir()
+papagaio.falar()
+papagaio.voar()
+
+</script>
+
+<body>
+
+
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+
+<!-- babeljs.io  >> docs >> setup >> prototipe in browser >> babel stand alone -->
+
+
+<!-- Link do babel -->
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+<script type="text/babel">
+// 3 escopos: global, funcao e bloco
+// global é o nosso objeto window
+
+
+// Variáveis do tipo var podem ser declaradas dentro FUNÇÕES  e BLOCO
+
+
+// Exemplo , escopo de função é isolado do escopo blobal
+// var serie = 'Friends'
+
+// function x(){
+
+// 	var serie = 'Game Of Thrones'
+
+// 	console.log('função: '+serie)
+
+// 	if(true){
+
+// 		console.log('Bloco dentro da função' + serie)
+
+// 	}
+// }
+
+
+// x()
+// if(true){
+// 	console.log('global:'+serie)
+// }
+
+
+
+// Exemplo 2:
+//  function x(){
+//  	console.log('Dentro da função: '+ serie)
+
+//  	if(true){
+
+//  	}
+//  } 
+
+// if (true){
+// 	var serie = "The Walking Dead"
+// 	x()
+// 	console.log(serie)
+// }
+
+// No exemplo acima, como a variável foi criada depois da criação da variável, deu tempo o JS elevar a variável do escopo de bloco para o escopo global e depois pôde-se utilizar a mesma variável dentro da função.
+
+// ---------------------------------------
+
+// LET VS VAR 
+
+// Let preserva o escopo de bloco da função, impedindo que a variável let seja utilizada globalmente ou sobreposta dentro de funções.
+
+// Evita q variáveis globais ou de funções sejam sobrepostas dentro de escopos de bloco.
+
+
+// ---------------- outros exemplos ----------------------- 
+
+// let serie = "Friends"
+// {
+// 	var serie = "Walking Dead"
+// 	console.log('Dentro do bloco: '+serie)
+// }
+
+// console.log('fora do bloco: '+ serie)
+// // Ocorre um conflito 
+
+
+// ------------------- exemplo ------------------------
+
+let serie = "Friends"
+{
+	let serie = "Walking Dead"
+	console.log('Dentro do bloco: '+serie)
+}
+
+console.log('fora do bloco: '+ serie)
+// Let evita confusão e não sobrescreve a variável global.
+// Mantém o código mais seguro.
+
+
+
+
+</script>
+
+
+</head>
+<body>
+
+
+
+
+
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>

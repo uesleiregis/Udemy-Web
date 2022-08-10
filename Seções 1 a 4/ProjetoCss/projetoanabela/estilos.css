@@ -1,0 +1,26 @@
+.menu{
+	font-size: 18px;
+	/*font-color:#1C2436;*/
+	font: blue;
+}
+
+.rodape{
+	font-weight: 900;
+	text-align: center;
+}
+.corpo{
+	background: #EBEADF
+}
+#titulo{
+	font-color:#8C7E46;
+
+}
+body{
+	background: #C6C2B3
+}
+.capa{
+
+}
+h3{
+	color: #8C7E46
+}

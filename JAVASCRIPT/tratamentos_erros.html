@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Atividade para Fixação do Conteúdo Aula 172</title>
+
+	<script>
+
+		// throw new Error('Houve um erro mas não se preocupe, estamos trabalhando nisso agora!!!')
+	//Netflix
+	var video = Array()
+
+	video[1] = Array()
+	video[1]['nome'] = 'Fullmetal Alchemist'
+	video[1]['categoria'] = 'Anime'
+
+	function getvideo(video){
+		//lógica
+		//http:
+
+		try{
+			console.log(video[0]['nome']) // forçando um erro por pura didática
+		} catch(erro){
+			tratarErro(erro)
+			console.log('Agora sim podemos tratar esse erro')
+
+			// throw new Error('Houve um erro mas não se preocupe, estamos trabalhando nisso agora!!!')
+			//Pode ser colocado em qq ponto da aplicação e interroper o programa na hora.
+
+		} finally{
+			console.log('Sempre passa por aqui (try/catch)')
+		}
+
+		console.log('A aplicação não morreu')
+	}
+
+	function tratarErro(e){
+		//Lógica para registrar o erro no servidor
+		console.log(e)
+	}
+
+	getvideo(video)
+
+	</script>
+
+</head>
+<body>
+
+ 
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+
+</body>
+</html>
