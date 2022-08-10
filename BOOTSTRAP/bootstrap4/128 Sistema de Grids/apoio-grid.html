@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+
+    <title>Bootstrap - Sistema de grids</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <style type="text/css">
+      .marcador{
+        background: #fe9d9d9d;
+        border: 1px solid #f94646;
+      }
+      .marcador-container{
+        background: #5bf946;
+        border: 1px solid #36ae26;
+      }
+    </style>
+
+  </head>
+
+  <body>
+  <!-- Obs: container é uma classe do bootstrap. Isto é, não foi eu que defini. -->
+
+    <div class=" container marcador-container">
+      <div class="row "> <!-- Cada row é um flex-container  -->
+
+        <div class="marcador col-md-6 col-xl-4">
+
+          <h2>Loren ipsum </h2>
+          <p> Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College</p>
+          <button class="btn btn-warning">Leia mais</button>
+
+        </div> <!-- estes é um flex-iten -->
+
+        <div class="marcador col-md-6 col-xl-4">
+
+          <h2>Loren ipsum </h2>
+          <p> Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College</p>
+          <button class="btn btn-warning">Leia mais</button>
+
+        </div> <!-- estes é um flex-iten -->
+
+        <div class="marcador col-md-6 col-xl-4 ">
+
+          <h2>Loren ipsum </h2>
+          <p> Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College</p>
+          <button class="btn btn-warning">Leia mais</button>
+
+        </div> <!-- estes é um flex-iten -->
+
+      </div> <!-- fim row -->
+
+      <!-- TESTANDO UM POUCO -->
+      <div class="row">
+        <div  class=" col-5 bg-dark offset-1">
+          conteúdo
+        </div>
+        <div class="row col-5 offset-1 bg-warning">
+          conteúdo
+        </div>
+      </div>
+           
+    </div> <!-- fim container -->
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+
+    <title>Bootstrap - Configurações do grid</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <style type="text/css">
+      .marcador{
+        background: #fe9d9d;
+        border: 1px solid #f94646;
+      }
+      .marcador-container{
+        background: #5bf946;
+        border: 1px solid #36ae26;
+      }
+      .borda{
+        border: 1px solid red;
+      }
+    </style>
+
+  </head>
+
+  <body>
+
+    <div class="container marcador-container">
+      
+      <h2>Largura fixa</h2>
+      <div class="row " >
+        <div class="marcador col">Área 1</div>
+        <div class="marcador col">Área 2</div>
+        <div class="marcador col">Área 3</div>
+        <div class="marcador col">Área 4</div>
+        
+      </div>
+
+      <h2>Largura automática (auto-layout)</h2>
+      <!-- fixa o tamanho da coluna que sobrar e mantém o número de colunas definido, aumentando a largura destes proporcionalmente -->
+       <div class="row " >
+        <div class="marcador col">Área 1</div> <!-- obs: se col restante for de grid-1 ela passará para o próxima linha quando for muito pequena. Esse não é o comportamento desejado. -->
+        <div class="marcador col">Área 2</div> 
+        <div class="marcador col-6">Área 3</div>
+        
+      </div>
+
+      <h2>Largura igual empilhada</h2>
+
+      <h2>Largura automática (auto-layout)</h2>
+      <div class="row " >
+        <div class="marcador col-sm">Área 1</div> 
+        <div class="marcador col-sm">Área 2</div> 
+        <div class="marcador col-sm">Área 3</div>
+      </div>
+
+
+      <h2>Ordenando</h2>
+
+      <div class="row " >
+        <div class="marcador col-md-4 order-2 ">Área 1</div> 
+        <div class="marcador col-md-4 order-3">Área 2</div> 
+        <div class="marcador col-md-4 order-1">Área 3</div>
+      </div>
+
+      <h2>offset</h2>
+
+      <div class="row ">
+        <div class="marcador col-md-6 offset-3 ">Login</div>
+        
+      </div>
+
+      <h2>offset múltiplos alinhamentos</h2>
+
+      <div class="row">
+         <div class="marcador col-md-3 ">conteudo 1</div>
+          <div class="marcador col-md-3 offset-md-6 ">conteudo 2</div>
+      </div>
+     
+
+      <h2>Aninhamento</h2>
+      <div class="row">
+        <div class="col-md-6 borda border-info">
+          col-md-6
+            
+            <div class="row">
+                <div class="col-md-6 marcador"> Conteúdo 1</div>
+                <div class="col-md-6 marcador"> Conteúdo 2</div>
+                
+            </div>
+            
+        </div>
+
+        <div class="col-md-6">
+          
+        </div>
+      </div>
+
+       <h2>Aninhamento - MEUS TESTES</h2>
+      <div class="row">
+        <div class="col-md-6 borda">
+            
+            <div class="col-md-6 marcador float-left">conteúdo 2
+
+            </div>
+            <div class="col-md-6 marcador float-left">conteúdo 2
+
+            </div>
+        </div>
+
+        <div class="col-md-6 borda border-dark">
+          <div class="borda border-danger">
+            Conteúdo
+          </div>
+        </div>
+      </div>
+
+<h1>continuando os testes</h1>
+      <div class="row borda bg-warning">
+        <div class="col-md-5 bg-warning">texto</div>
+        <div class="col-md-7 bg-dark">texto</div>
+
+        <h1>mais testes</h1>
+        <div style="flex: cle"></div>
+        <div class="row col-md-10 borda border-white justify-content-around">
+          <div class="col-md-6 borda bg-danger">t2</div>
+          <div class="col-md-6 borda bg-white">t2</div>
+        </div>
+      </div>
+
+    </div> <!-- fim container -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
